@@ -68,7 +68,7 @@ gdp_df = get_gdp_data()
 
  [世界銀行](https://data.worldbank.org/) のGDPデータを公開しています。
  現在、2024年までの最新データが反映されています。 
- 特定の年が空欄になっていることもありますが、それを補って余りあるほど素晴らしくかつ無料のデータソースです。
+ 特定の年が空欄になっていることもありますが、それを補って余りあるほど素晴らしい無料のデータソースです。
 '''
 
 # Add some spacing
@@ -105,7 +105,7 @@ filtered_gdp_df = gdp_df[
     & (from_year <= gdp_df['Year'])
 ]
 
-st.header('GDP over time', divider='gray')
+st.header('GDPの推移', divider='gray')
 
 ''
 
@@ -123,7 +123,7 @@ st.line_chart(
 first_year = gdp_df[gdp_df['Year'] == from_year]
 last_year = gdp_df[gdp_df['Year'] == to_year]
 
-st.header(f'GDP in {to_year}', divider='gray')
+st.header(f'{to_year}のGDP', divider='gray')
 
 ''
 
